@@ -1,0 +1,39 @@
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    width: calc(33% - 10px);
+    height: 100px;
+    background-color: darkblue;
+    margin: 10px;
+    text-align: center;
+}
+
+@media (min-width:640px) {
+    .child {
+        width: calc(25% - 10px);
+        background-color: darkmagenta;
+    }
+}
+
+@media (min-width:940px) {
+    .child {
+        width: calc(20% - 10px);
+        background-color: rgb(78, 50, 78);
+    }
+}
+
+/* for special effect  */
+
+.child {
+     overflow: hidden; /*for fit in div */
+    transition: all ease 1s;
+}
+
+.child:hover {
+    scale: 1.1;
+    color: aqua;
+    background-color: #000;
+}

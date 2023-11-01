@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: grey; */
+    border-bottom: 1px solid #dadada;
+    height: 100px;
+    width: 100%;
+    /* padding: 0 3vw; */
+}
+
+.nav h2 {
+    padding-left: 4vw;
+    font-size: 2vw;
+    /* font-weight: 700; */
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 4vw;
+    padding-right: 4vw;
+}
+
+.nav-part2 button {
+    font-size: 1.1vw;
+    padding: 6px 11px;
+    background-color: #18C5D3;
+    color: #fff;
+    border-radius: 33px;
+    font-weight: 600;
+
+}
+
+.nav h5 {
+    font-size: 1vw;
+}
+
+nav i {
+    display: none;
+}
+
+.content {
+    /* height: cal  c(100% - 100px); */
+    height: 646px;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+}
+
+
+.left-content {
+    height: 100%;
+    width: 50%;
+    /* background-color: crimson; */
+    padding: 5vw 4vw;
+
+}
+
+.left-content {
+    font-size: 1.5vw;
+}
+
+code {
+    color: lightseagreen;
+}
+
+
+
+.left-content p {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+}
+
+.left-content button {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: #18C5D3;
+    color: #fff;
+    border-radius: 33px;
+    font-weight: 600;
+
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.right-content {
+    /* margin: 5vw 4vw; */
+    padding: 5vw 3vw;
+    overflow: hidden;
+    /* background: linear-gradient(yellow, red, blue, purple, orange);
+    padding: 2px; */
+}
+
+.right-content img {
+    height: 100%;
+    width: 100%;
+    margin-top: 1vw;
+    transition: all ease 1s;
+
+}
+
+.right-content:hover img {
+    scale: 1.2;
+    /* padding: 5vw 3vw; */
+
+}
+
+
+@media (max-width:600px) {
+
+    .nav h2 {
+        font-size: 6vw;
+    }
+
+    .nav-part2 h5 {
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 6vw;
+    }
+
+    .nav-part2 button {
+        display: none;
+
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-content {
+        width: 100%;
+        height: 50%;
+    }
+
+    .left-content h1 {
+        font-size: 8vw;
+    }
+
+    .left-content p {
+        font-size: 5vw;
+        /* font-weight: 600; */
+    }
+
+
+
+    .right-content {
+        width: 100%;
+        height: 50%;
+
+    }
+
+
+}
+
+

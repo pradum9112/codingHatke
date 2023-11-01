@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .buttonclass button {
+        color: aqua;
+        background-color: grey;
+        border-color: black;
+        text-align: center;
+        border-radius: 9px;
+        padding: 5px;
+        margin: 5px;
+        height: 33px;
+        width: 88px;
+        box-shadow: 10px 10px 22px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .buttonclass {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 44px;
+    }
+
+    button:hover {
+        background-color: black;
+    }
+</style>
+
+<body>
+    <div class="buttonclass">
+
+        <button onclick="getListen()">click</button>
+        
+        <h1 id="id"> Result in console!</h1>
+    </div>
+
+
+    <script>
+        function getListen() {
+            // Function to simulate the "get" action
+            const bb = document.getElementById('id')
+            bb.innerHTML = "Go To console😁!"
+            function get(item) {
+                console.log("Got the " + item);
+            }
+
+            // Function to simulate the "listen" action
+            function listen(event, callback) {
+                console.log("Listening for " + event + " event...");
+                // Simulate an event happening after 2 seconds
+                setTimeout(function () {
+                    callback(event);
+                }, 2000);
+            }
+
+            // Using the functions
+            get("ball"); // Output: Got the ball
+
+            listen("click", function (event) {
+                console.log("Button was clicked!");
+                console.log("Event:", event);
+            });
+
+        }
+    </script>
+</body>
+
+</html>
